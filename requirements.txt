@@ -1,0 +1,6 @@
+flask
+tensorflow
+pillow
+opencv-pythom
+numpy
+gunicorn
