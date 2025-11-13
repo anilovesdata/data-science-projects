@@ -1,56 +1,64 @@
-# data-science-projects
-# 💻 Beginner Projects Portfolio
+## Overview
 
-Welcome to my learning journey as I build small projects in web development and data science. I'm currently exploring tools like **Python**, **JavaScript**, **Node.js**, and **HTML/CSS**, and using this space to grow and track my progress.
-
----
-
-##  What You'll Find Here
-
-This repository (and others I'll create soon) will include:
-- 🔹 Simple **web apps** using HTML, CSS, JavaScript, and Node.js
-- 🔹 Basic **data analysis** notebooks using Python, Pandas, and Matplotlib
-- 🔹 Projects that solve small everyday problems
-- 🔹 Experiments with APIs, UI, and beginner-friendly code
+This web application detects a person's **emotion** either from an uploaded image or a live webcam capture.
 
 ---
 
-## 🔧 Technologies I’m Learning
-- **Python** (for scripting and data analysis)
-- **Jupyter Notebooks** (for step-by-step data projects)
-- **JavaScript** & **Node.js** (for backend web logic)
-- **HTML/CSS** (for frontend design)
-- **Git & GitHub** (for version control and collaboration)
+The project was built using **Python** for the web app and model training, and **Streamlit** for hosting. It logs each user's activity (name, image, and prediction result) into a local **SQLite** database
 
----
+## Features
 
-## 📌 Why This Exists
-I'm a complete beginner teaching myself coding by building projects from scratch. I’m sharing them here not because they’re perfect, but because:
-- I want to **track my growth**
-- I believe learning in public helps me stay accountable
-- Someone else might find it useful or inspiring to start too
+Detects emotions from:
 
----
+- Uploaded image files
+- Webcam input.
 
-## ✅ Features (for future projects)
-Here are the kinds of features I might add as I learn:
-- User authentication (sign-up/login pages)
-- Form validation and interactive buttons
-- Basic data dashboards or visualizations
-- API integrations (e.g., weather apps, quotes, search engines)
-- File upload or simple databases (like local storage or MongoDB)
+Displays:
 
----
+- Detected dominant emotion
+- Confidence scores for all emotions.
 
-## 📬 Feedback or Collaboration
-If you see something interesting or have tips, feel free to open an issue or send a message. I'd love to improve.
+Includes both:
 
----
+- A custom CNN model.
+- A deepFace fallback model (Just in case the CNN model has issues.)
 
-## 📅 Current Status
-🛠 Ongoing – I'm just getting started, and this repo will grow over time with more projects and improvements.
+## NOTE
 
----
+- This web app saves your uploaded image to a local database. Now while I have no particular use for your image. This is a public repo, meaning anyone can access that sort of data. I'll implement a work around that keeps your details private to you.
 
-## 📜 License
-This project is open-source under the MIT License.
+## How to run it
+
+To test it out on your own machine:
+
+- Clone the repo:
+  git clone https://github.com/Oluwatomi-Omotoso/Emotion-Detector/tree/main/OMOTOSO_23CG034133_Emotion_detector_web_app.git
+
+- I suggest you work on it in a virtual environment, just in case you break something.
+- Install the dependencies:
+
+  pip install -r requirements.txt
+
+- And then you run the program
+
+  streamlit run app.py
+
+**OR**
+
+You could just try out the live web app I made, you can find it here: [Live demo](https://oluwatomi-omotoso-emotion-detector.streamlit.app/)
+
+## Optional
+
+You could train your own model for improved resuls.
+
+Here's the dataset I used it for mine: https://www.kaggle.com/datasets/msambare/fer2013
+
+## Author
+
+Name: Mene Anirejuoritse Nicole
+
+Matric No.: 23CG034095
+
+Institution: Covenant University
+
+Course: CSC 331 — Machine Learning & AI Project
