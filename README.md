@@ -55,7 +55,7 @@ Here's the dataset I used it for mine: https://www.kaggle.com/datasets/msambare/
 
 ## Author
 
-Name: Mene Anirejuoritse Nicole
+Name: Mene Anirejuoritse
 
 Matric No.: 23CG034095
 
